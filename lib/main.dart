@@ -12,9 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(254, 206, 1, 1)),
+        inputDecorationTheme:const  InputDecorationTheme(
+          prefixIconColor: Color.fromRGBO(119, 119, 119, 1),
+          hintStyle: TextStyle(fontWeight: FontWeight.bold,)
+        )
+      ),
       title: 'shoe shop',
-      home:HomePage(),
+      home: const HomePage(),
     );
   }
 }
