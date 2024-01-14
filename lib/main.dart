@@ -26,3 +26,13 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+class PaymentPage extends StatelessWidget{
+  const PaymentPage ({super. key});
+@override
+ 
+Widget build(BuildContext ctx ) {
+return Scaffold ();
+  
+}
+
+}
